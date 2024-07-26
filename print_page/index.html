@@ -1,0 +1,1174 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Print Site - High Speed On-Offloader (HSO)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings1.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings2.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings3.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings4.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings5.css">
+    
+      <link rel="stylesheet" href="../css/print-site-enum-headings6.css">
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#section-home" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="High Speed On-Offloader (HSO)" class="md-header__button md-logo" aria-label="High Speed On-Offloader (HSO)" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            High Speed On-Offloader (HSO)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Print Site
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../install/" class="md-tabs__link">
+          
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="High Speed On-Offloader (HSO)" class="md-nav__button md-logo" aria-label="High Speed On-Offloader (HSO)" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    High Speed On-Offloader (HSO)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Setup Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Setup Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reference Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-home" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Home
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I. Home">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Index
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-guides" class="md-nav__link">
+    <span class="md-ellipsis">
+      II. Guides
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II. Guides">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. User Guide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Reference Guide
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. About
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section id="print-site-cover-page">
+            
+<div>
+
+    
+        <h1>High Speed On-Offloader (HSO)</h1>
+    
+
+</div>
+
+
+<table>
+
+    
+
+    
+
+    
+
+    
+
+</table>
+
+
+
+
+
+        </section>
+        
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="6">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        
+                        <h1 class='nav-section-title' id='section-home'>
+                            Home <a class='headerlink' href='#section-home' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="index"><p><img :=":" alt="alt text" src="../assets/images/hero.png" style="height:400px" /></p>
+<h1 id="index-home">Home</h1>
+<blockquote>
+<p>Acuworkflow gives you a simple, no-code data movement platform to copy workspaces from and to Smartsheet without the inherent 100-sheet limitation. Whether you want to migrate, protect or replicate your data, we have just the tool, it is called the <strong>HSO</strong>floader/Onloader or <strong>HSO</strong> in short.</p>
+</blockquote>
+<h2 id="index-overview">Overview</h2>
+<p>AcuWorkflow a leading provider of securing Smartsheet data is pleased to announce its latest offering called HSO.  It is a new bulk Data Movement platform to support migrations across the various Smartsheet regions. </p>
+<p>HSO is ideal for moving bulk data in or out of Smartsheet overcoming the 100-item limitation.  What sets it apart is the ability to operate at Account, User, or Workspace level whilst maintaining Smartsheet folder hierarchies on subsequent uploads.  These capabilities further expand SmartBackup tools designed to help businesses secure, protect, and govern Smartsheet data.  </p>
+<div class="admonition smartbackup">
+<p class="admonition-title">Smartbackup</p>
+<p>HSO used in conjunction with SmartBackup increases accuracy, mitigates risks, 
+and helps with compliance requirements.  In stand-alone mode, it excels as a bulk data migrator,
+take-on engine, or solution duplicator.</p>
+</div>
+<p>For access visit <a href="https://www.acuworkflow.com">AcuWorkflow.com</a>.</p>
+<h2 id="index-use-cases">Use Cases</h2>
+<ol>
+<li><strong>Data Center Migration</strong> – Migrate between Smartsheet Regions, something near impossible in the current arrangement</li>
+<li><strong>Move large data in/out of Smartsheet</strong> – DRP, Data Protection, Enriching, Seed-Feed, Attachment re-location … </li>
+<li><strong>Bulk Data Take-on</strong> - get bulk data from other systems, Smartsheet alternative platforms like ClickUp, Monday.com, Asana ….</li>
+<li><strong>Programme Management</strong> - Blueprinting – Stamp master Project arrangements, Project Retirements &amp; Freezing</li>
+<li><strong>Solution stepping</strong> – version roll on/off nightly’s weekly’s, Sandbox seeding – make data available (anonymized and de-sensitized)</li>
+<li><strong>Regulatory Compliance</strong> – regulatory record keeping and compliance. </li>
+</ol>
+<h2 id="index-getting-started">Getting started</h2>
+<p>Getting started with HSO is very simple and could be achieved with three easy steps.</p>
+<ol>
+<li>Download and <a href="#install">install</a> the latest version of HSO.</li>
+<li><a href="#setup">Configure</a> user details and other options</li>
+<li>Run your first Offload or further customize.</li>
+</ol>
+<h2 id="index-positioning-hso">Positioning HSO</h2>
+<h3 id="index-broadly-speaking">Broadly speaking</h3>
+<blockquote>
+<p>HSO is a Premier Offering from AcuWorkflow and is ideally used in conjunction with SmartBackup</p>
+</blockquote>
+<ul>
+<li>HSO licensing options still being firmed up, anticipates AcuWorkflow SmartBackup EE licensing to operate, though at no/minimal additional cost  </li>
+<li>Positioned as a high-speed data mover to copy/move workspaces between Smartsheet regions or assist with solution migrations </li>
+<li>Positioned to complement SmartBackup Export or be a stand-alone bulk offloader/onloader</li>
+<li>Separate installation SETUP file to SmartBackup</li>
+<li>HSO can operate at Workspace, User or Account level</li>
+<li>Bypass the Smartsheet 100 resource item limit associated with the copy-ing of items within workspaces/folders  </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Datashuttle</p>
+<ul>
+<li>Somewhat competes with Smartsheet <a href="https://www.smartsheet.com/marketplace/premium-apps/data-shuttle">DataShuttle</a> with the following differentiators</li>
+<li>Datashuttle runs anywhere from $12k-$100K which makes HSO very price competitive (SBU EE inclusive)</li>
+<li>Datashuttle can only offload to cloud drives Google and Onedrive(SP), HSO can do native filesystems(local &amp; network)</li>
+<li>Datashuttle operates at sheet level, HSO operates at workspace level (user and account can be configured).  If you only want to deal with a sheet, use the SmartBackup Export function.</li>
+<li>Datashuttle cannot inter-operate between regions, something HSO is ideally positioned for</li>
+<li>Datashuttle primarily works using user automations in the context of a user; HSO on the other hand operate accross users thus providing coverage for the complete account.</li>
+</ul>
+</div>
+<h3 id="index-need-for">Need for</h3>
+<p>The following screenshots illustrates requests by the Smartsheet community outlining the need for a product like <strong>HSO</strong></p>
+<p><img :=":" alt="alt text" src="../assets/images/solving.png" style="height:300px" /></p>
+<h3 id="index-differences-to-smartbackup-export">Differences to SmartBackup Export</h3>
+<p>HSO is designed to supplement high intensity sites already using <a href="https://docs.acuworkflow.com/5.-reference-guide/reference-guide#export">SmartBackup Export</a> </p>
+<p>Export allows one to export sheets from Smartsheet to a local drive.  It is ideal for creating regular copies of your data for snapshot and history purposes.  Broadly speaking, <strong>Export</strong> is use in  the Backup/Recovery scenario where a sheet is kept outside Smartsheet for recovery or compliance reasons.  On the other hand <strong>HSO</strong> is more of a data migrator though it can also be use for recovery purposes, in fact ideal for solution DRP reasons. </p>
+<table>
+<thead>
+<tr>
+<th>Criteria</th>
+<th>Export</th>
+<th>HSO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Unit of work</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span>     Work with a Sheet</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7Z"/></svg></span>    Work with a Workspace/s</td>
+</tr>
+<tr>
+<td><code>Scope</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span>     Incremental, Specific or All for a given User</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7Z"/></svg></span>     All Sheets in a Workspace/s for a given User</td>
+</tr>
+<tr>
+<td><code>Output Structure</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Nested Folder with ZIP files</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span>     Flat structure with control and XLSX files</td>
+</tr>
+<tr>
+<td><code>Input Structure</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span> Restore Row or sheet manually, cannot recreate Folder structure</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span>     Restore workspace, can re-create folder structure</td>
+</tr>
+<tr>
+<td><code>Names</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span> Files and Folders have original names but suffer from ANSI only and dupe issues</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span>     ID's with Names in control file</td>
+</tr>
+<tr>
+<td><code>Recovery</code></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span> Manual</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span>     Automated</td>
+</tr>
+</tbody>
+</table></section><h1 class='nav-section-title-end'>Ended: Home</h1>
+                        <h1 class='nav-section-title' id='section-guides'>
+                            Guides <a class='headerlink' href='#section-guides' title='Permanent link'>↵</a>
+                        </h1>
+                        
+                        <h2 class='nav-section-title' id='section-setup-guide'>
+                            Setup Guide <a class='headerlink' href='#section-setup-guide' title='Permanent link'>↵</a>
+                        </h2>
+                        <section class="print-page" id="install"><h1 id="install-setup-guide-installation">Setup Guide - Installation</h1>
+<h2 id="install-download">Download</h2>
+<p>Download and install the latest version of HSO.</p>
+<h2 id="install-install">Install</h2>
+<p>The download consists of a Windows Setup file, double-click to start the Installation process.</p>
+<p><img :=":" alt="alt text" src="../assets/images/setup.png" style="height:400px" /></p>
+<p>Follow the Wizard steps.</p>
+<h3 id="install-installation-password">Installation Password</h3>
+<p>The installation password is <kbd>YellowOrange</kbd></p>
+<h3 id="install-installation-location">Installation location</h3>
+<blockquote>
+<p>You can choose where to install HSO but usually we recommend the default, which is <strong>c:/hso</strong></p>
+</blockquote>
+<div class="admonition info write access">
+<p class="admonition-title">Info</p>
+<p>Ensure you have write-access to the space. Under certain circumstances
+when hosting in a cloud platform such as AWS or Microsoft Azure, 
+the Windows Image for c:/hso is marked as read-only.</p>
+</div>
+<h3 id="install-installation-verification">Installation verification</h3>
+<p>Invoke <a href="#user-hso-gui">HSO Gui</a> by double-clicking on the Desktop Icon.  It will take a couple of minutes and then you should see the HSO Gui screen in the browser.  If not contact AcuWorkflow support.</p></section><section class="print-page" id="setup"><h1 id="setup-setup-guide-configuration">Setup Guide - Configuration</h1>
+<h2 id="setup-smartsheet-api-token">Smartsheet API Token</h2>
+<p>Obtain your Smartsheet API Token for a SysAdmin user.  The process is described in the <a href="https://docs.acuworkflow.com/4.-administrator-guide/administrator-guide#sysadmin-api-token">SmartBackup documentation</a></p>
+<p>Keep it secure and on-hand becuase you need to input it into the <a href="#user-smartsheet-pane">Smartsheet Pane</a> when interaction is needed with Smartsheet.  Also keep in mind the <a href="https://help.smartsheet.com/articles/2483116-data-residency">Smartsheet region</a>you are working with.  Currently by design this value is not saved/remembered accross HSO Gui sessions or refreshes.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Smartsheet API Token is recorded in the <a href="#user-config-files">config files</a> for use by HSOffLoader or HSOOnloader.  Ensure these files are properly secured under admin control.</p>
+</div>
+<h2 id="setup-file-location">File location</h2>
+<p>Smartsheet data will be offloaded to a file location of your choice.  Identify the location and ensure enough space is available for subsequent offloads.  This location you need to input into <a href="#user-file-system-pane">File System Pane</a> when interaction is needed with the filesystem. Currently by design this value is not saved/remembered accross HSO Gui sessions or refreshes.</p></section><h1 class='nav-section-title-end'>Ended: Setup Guide</h1><section class="print-page" id="user"><h1 id="user-user-guide">User Guide</h1>
+<p>HSO is a data movement platform for rapidly moving data from and to Smartsheet at workspace level.</p>
+<p>It comprises of the following components:</p>
+<div class="grid cards">
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h176l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32h256c17.7 0 32-14.3 32-32s-14.3-32-32-32h-69.3L336 416h176c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm448 64v288H64V64h448z"/></svg></span> <a href="#user-hso-gui"><strong>GUI</strong></a> for online UI and ease of use</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zm192 0v128h128L256 0zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm112-34 48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg></span> <a href="#user-config-files"><strong>Config Files</strong></a> to steer what needs to be on or offloaded</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9-.1-2.7-.2-5.4-.2-8.1 0-88.4 71.6-160 160-160 59.3 0 111 32.2 138.7 80.2A95.51 95.51 0 0 1 448 96c53 0 96 43 96 96 0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167 80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24v134.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"/></svg></span> <a href="#user-hsoffloader"><strong>HSOffloader</strong></a> for moving data out of Smartsheet</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9-.1-2.7-.2-5.4-.2-8.1 0-88.4 71.6-160 160-160 59.3 0 111 32.2 138.7 80.2A95.51 95.51 0 0 1 448 96c53 0 96 43 96 96 0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"/></svg></span> <a href="#user-hsonloader"><strong>HSOnloader</strong></a> for moving data into Smartsheet</li>
+</ul>
+</div>
+<h2 id="user-hso-gui"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h176l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32h256c17.7 0 32-14.3 32-32s-14.3-32-32-32h-69.3L336 416h176c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm448 64v288H64V64h448z"/></svg></span> HSO GUI</h2>
+<p>HSO can be configured, managed and run via the HSO GUI.  It can also be run <em>head-less</em> which mean without a GUI.  <em>head-less</em> mode most often use when you want to run HSOffloader or HSOnloader via a schdeluer on regular intervals.  In such cases one can still use the GUI to help create the configuration files but thereafter it is not needed anymore.  </p>
+<p><img :=":" alt="alt text" src="../assets/images/gui.png" style="height:400px" /></p>
+<ol>
+<li><a href="#user-smartsheet-pane"><strong>Smartsheet Pane</strong></a> It shows your Smartsheet account where you want to <code>offload Smartsheet data from</code> or <code>onload data from into Smartsheet.</code></li>
+<li><a href="#user-file-system-pane"><strong>FileSystem Pane</strong></a> It shows the designated area where you want to <code>offload Smartsheet data to</code> or <code>onload data from here into Smartsheet.</code></li>
+<li><a href="#user-data-to-be-transferred-pane"><strong>Data to be Transferred</strong></a> Shows which users and/or workspaces will be transferred</li>
+</ol>
+<h3 id="user-usage">Usage</h3>
+<p>Primarily the HSO GUI is use to perform an <strong>OFFLOAD</strong> <em>From Smartsheet to a File System</em> or a <strong>ONLOAD</strong> <em>from FileSystem to Smartsheet</em></p>
+<p><img :=":" alt="alt text" src="../assets/images/guiops.png" style="height:400px" /></p>
+<p>This is done with two buttons for each environment.  </p>
+<p><img :=":" alt="alt text" src="../assets/images/guibuttons.png" style="height:400px" /></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="user-__tabbed_1_1" name="user-__tabbed_1" type="radio" /><input id="user-__tabbed_1_2" name="user-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="user-__tabbed_1_1">OFFLOAD</label><label for="user-__tabbed_1_2">ONLOAD</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong>REFRESH</strong>  Refresh list of Users and Workspaces from Smartsheet </li>
+<li><strong>OFFLOAD</strong>  Create offload config file based on selected data and other settings and show result in data to be transferred</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>REFRESH</strong>  Refresh list of User Workspaces from File System (e.g. previously offloaded workspaces)</li>
+<li><strong>ONLOAD</strong>  Create onload config file based on selected data and other settings and show result in data to be transferred</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="user-smartsheet-pane">Smartsheet Pane</h3>
+<p>The right side of the screen shows a hierachical view of Smartsheet Account resolved by the APIToken Key. This view is similar to viewing the Account Structure in the Smartsheet UI, though an effort was made to simplify it a bit.  </p>
+<p><img :=":" alt="alt text" src="../assets/images/right.png" style="height:400px" /></p>
+<p>Selections of <strong>WHAT</strong> to offload is done by choosing any combination of:</p>
+<ul>
+<li><strong>Workspaces</strong> Selected Workspaces from the <strong>Workspaces Tab</strong> and/or</li>
+<li><strong>Users</strong>  All workspaces for a given User/s from the <strong>Users Tab</strong> and/or</li>
+<li><strong>Filter</strong> Include only certain Sheets matching criteria within from the <strong>Filters Tab</strong></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Workspaces</p>
+<p>When selecting from the Workspaces tab you will see each Workspace is prefixed with its Smartsheet ID.  This provides an easy way to ensure you are selecting the right workspace.</p>
+</div>
+<ul>
+<li>Clicking the Refresh button, refresh the Smartsheet Users and Workspaces available.  Only perform this when you view the latest information.  It will take a couple of minutes to complete.</li>
+<li>Clicking the Data to be transferred button, creates a list of items ready to be transferred.  Note this does not perform the on or offload operation yet. </li>
+</ul>
+<h3 id="user-file-system-pane">File System Pane</h3>
+<p>The left side of the screen shows a hierachical view of the filesystem pointed to by the value in Rootdirectory. This view is similar to viewing the folders in Windows Explorer, though an effort was made to simplify it a bit.</p>
+<p><img :=":" alt="alt text" src="../assets/images/left.png" style="height:400px" /></p>
+<div class="admonition info rootdirectory">
+<p class="admonition-title">Info</p>
+<p>The root directory points to the root of the filesystem you are designated as the offload to or onload from area,
+Typically this is c:/hso/users.</p>
+</div>
+<ul>
+<li>Clicking the Refresh button, refresh the directory tree from the file system.  Perform this every time when a new root directory is supplied. </li>
+<li>Clicking the Data to be transferred button, creates a list of items ready to be transferred.  Note this does not perform the on or offload operation yet. </li>
+</ul>
+<h3 id="user-data-to-be-transferred-pane">Data to be transferred pane</h3>
+<p>The bottom of the screen shows a collection of data that will be transferred.  The appropriate button will be shown depending if you are Offloading or Onloading </p>
+<p><img :=":" alt="alt text" src="../assets/images/bottom.png" style="height:200px" /></p>
+<p>Clicking the Offload button on the Data to be transferred pane will show the following screen</p>
+<p><img :=":" alt="alt text" src="../assets/images/offload.png" style="height:400px" /></p>
+<p>Ensure the details are coorect, also calling out the following:</p>
+<ol>
+<li><a href="#user-config-files"><strong>Config File</strong></a> Name of the generated config file that will drive <a href="#user-hsoffloader"><strong>HSOffloader</strong></a>.  Clicking on the icon will open Notepad and you can optionally edit the file.   </li>
+<li><strong>Offload to</strong> Ensure that the path you want to offload the Smartsheet data is the correct one.   </li>
+<li><strong>Sheets/Attachments</strong> Choose whether you want to offload Sheets or attachments</li>
+<li><strong>Run Now</strong> Click on Run Now if you want to start <a href="#user-hsoffloader"><strong>HSOffloader</strong></a>.  Optionally you can define a task in Windows Task scheduler to run it based on a schedule.</li>
+</ol>
+<h2 id="user-config-files"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zm192 0v128h128L256 0zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zm112-34 48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg></span> Config Files</h2>
+<p>Config files are yaml based files that drives the parameters neccessary for HSOffloader and HSOnloader to function.  These are automatically generated by HSO GUI and you can optionally edit them at any time thereafter.  If you are not familiar with yaml files, they are ordinary editable text files but the indentations shown should be observed using white spaces.</p>
+<p><img :=":" alt="alt text" src="../assets/images/config.png" style="height:400px" /></p>
+<ol>
+<li>
+<p><strong>Top Section</strong> Shown is the config file name and a block of intro comments.  # denotes a comment.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="err">#</span><span class="w"> </span><span class="err">+</span><span class="mf">------------------------------------------------------------+</span>
+<span class="w">    </span><span class="err">#</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">co</span><span class="kc">nf</span><span class="err">igura</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="err">was</span><span class="w"> </span><span class="err">ge</span><span class="kc">nerate</span><span class="err">d</span><span class="w"> </span><span class="err">by</span><span class="w"> </span><span class="err">HSO</span><span class="w"> </span><span class="err">Co</span><span class="kc">ns</span><span class="err">ole</span><span class="w">            </span><span class="err">|</span>
+<span class="hll"><span class="w">    </span><span class="err">#</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="mi">2024-07-24</span><span class="err">T</span><span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">00</span><span class="w">                                        </span><span class="err">|</span>
+</span><span class="w">    </span><span class="err">#</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="w">  </span><span class="err">O</span><span class="w"> </span><span class="err">F</span><span class="w"> </span><span class="err">F</span><span class="w"> </span><span class="err">L</span><span class="w"> </span><span class="err">O</span><span class="w"> </span><span class="err">A</span><span class="w"> </span><span class="err">D</span><span class="w">  </span><span class="err">co</span><span class="kc">nf</span><span class="err">igura</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w">                   </span><span class="err">|</span>
+<span class="w">    </span><span class="err">#</span><span class="w"> </span><span class="err">+</span><span class="mf">------------------------------------------------------------+</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>HSO main section</strong> Ensure APIToken and Region are correct. </p>
+<div class="highlight"><pre><span></span><code><span class="err">hso</span><span class="p">:</span>
+<span class="err">i</span><span class="kc">nstan</span><span class="err">ceid</span><span class="p">:</span><span class="w"> </span><span class="err">Thor</span>
+<span class="err">versio</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="mf">2.8.0</span>
+<span class="hll"><span class="kc">t</span><span class="err">oke</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="mi">111111111111111111</span>
+</span><span class="hll"><span class="err">regio</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="err">US</span>
+</span><span class="kc">t</span><span class="err">hreads</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>defaults section</strong> These default values would be used. </p>
+<div class="highlight"><pre><span></span><code><span class="err">de</span><span class="kc">faults</span><span class="p">:</span>
+<span class="kc">t</span><span class="err">o_pa</span><span class="kc">t</span><span class="err">h</span><span class="p">:</span><span class="w"> </span><span class="err">c</span><span class="p">:</span><span class="err">\hso\users</span>
+<span class="err">packi</span><span class="kc">n</span><span class="err">g_</span><span class="kc">f</span><span class="err">iles</span><span class="p">:</span><span class="w"> </span><span class="err">False</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>filters section</strong> Filter criteria. </p>
+<div class="highlight"><pre><span></span><code><span class="kc">f</span><span class="err">il</span><span class="kc">ters</span><span class="p">:</span>
+<span class="err">#</span><span class="w"> </span><span class="err">op</span><span class="kc">t</span><span class="err">io</span><span class="kc">nall</span><span class="err">y</span><span class="w"> </span><span class="kc">f</span><span class="err">il</span><span class="kc">ter</span><span class="w"> </span><span class="kc">na</span><span class="err">mes</span><span class="w"> </span><span class="err">based</span><span class="w"> </span><span class="err">o</span><span class="kc">n</span><span class="w"> </span><span class="kc">f</span><span class="err">ollowi</span><span class="kc">n</span><span class="err">g</span><span class="w"> </span><span class="err">cri</span><span class="kc">ter</span><span class="err">ia</span>
+<span class="hll"><span class="err">s</span><span class="kc">tarts</span><span class="mi">-</span><span class="err">wi</span><span class="kc">t</span><span class="err">h</span><span class="p">:</span><span class="w"> </span>
+</span><span class="hll"><span class="err">e</span><span class="kc">n</span><span class="err">ds</span><span class="mi">-</span><span class="err">wi</span><span class="kc">t</span><span class="err">h</span><span class="p">:</span><span class="w"> </span>
+</span><span class="hll"><span class="err">co</span><span class="kc">nta</span><span class="err">i</span><span class="kc">ns</span><span class="p">:</span><span class="w"> </span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>users section</strong> Specify what Users/workspaces should be offloaded. </p>
+<ol>
+<li>
+<p>Sample, specific workspaces that needs to be offloaded</p>
+<div class="highlight"><pre><span></span><code><span class="err">users</span><span class="p">:</span>
+<span class="err">#</span>
+<span class="hll"><span class="mi">-</span><span class="w"> </span><span class="err">user</span><span class="p">:</span><span class="w"> </span><span class="err">jdoe@acme.com</span>
+</span><span class="w">    </span><span class="err">workspaces</span><span class="p">:</span>
+<span class="hll"><span class="w">    </span><span class="mi">-</span><span class="w"> </span><span class="err">workspace</span><span class="p">:</span><span class="w"> </span><span class="mi">1665714986739588</span><span class="w">  </span><span class="err">#</span><span class="w"> </span><span class="err">Corpora</span><span class="kc">te</span><span class="w"> </span><span class="err">Hub</span>
+</span><span class="hll"><span class="w">    </span><span class="mi">-</span><span class="w"> </span><span class="err">workspace</span><span class="p">:</span><span class="w"> </span><span class="mi">4421652692920196</span><span class="w">  </span><span class="err">#</span><span class="w"> </span><span class="err">NBC</span><span class="w"> </span><span class="err">Compa</span><span class="kc">n</span><span class="err">y</span><span class="w"> </span><span class="err">Admi</span><span class="kc">n</span>
+</span><span class="err">#</span>
+</code></pre></div>
+</li>
+<li>
+<p>Sample, offload all workspaces for a set of users</p>
+<div class="highlight"><pre><span></span><code><span class="err">users</span><span class="p">:</span>
+<span class="err">#</span>
+<span class="hll"><span class="mi">-</span><span class="w"> </span><span class="err">user</span><span class="p">:</span><span class="w"> </span><span class="err">jdoe@acme.com</span>
+</span><span class="hll"><span class="mi">-</span><span class="w"> </span><span class="err">user</span><span class="p">:</span><span class="w"> </span><span class="err">ja</span><span class="kc">ne</span><span class="err">doe@acme.com</span>
+</span><span class="hll"><span class="mi">-</span><span class="w"> </span><span class="err">user</span><span class="p">:</span><span class="w"> </span><span class="kc">f</span><span class="err">gump@gumpco</span><span class="p">,</span><span class="err">com</span>
+</span><span class="err">#</span>
+</code></pre></div>
+</li>
+</ol>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Smartsheet API Token</p>
+<p>The Smartsheet API Token is recorded in the <a href="#user-config-files">config files</a> for use by HSOffLoader or HSOOnloader.  Ensure these files are properly secured under admin control.</p>
+</div>
+<h2 id="user-hsoffloader"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9-.1-2.7-.2-5.4-.2-8.1 0-88.4 71.6-160 160-160 59.3 0 111 32.2 138.7 80.2A95.51 95.51 0 0 1 448 96c53 0 96 43 96 96 0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167 80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24v134.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"/></svg></span> HSOffloader</h2>
+<p>To use HSOffloader, you need a destination and a Smartsheet API key.  You also need to tell HSOffloader where the offloaded data should land.  All of this is specified in the relevant <a href="#user-config-files"><strong>config file</strong></a>.</p>
+<p>You may choose how to run this</p>
+<ol>
+<li><strong>Once off</strong> Ideal for a right now snapshot or dealing with a point-in-time workspace copy.</li>
+<li><strong>Regular Intervals</strong> Ideal for planned schedules </li>
+</ol>
+<p>It can be invoked in any of the following ways</p>
+<ol>
+<li><strong>From the HSO GUI</strong> by clicking on the <strong>Run now</strong> button</li>
+<li><strong>From Windows CLI</strong> by opening a Windows Terminal or CLI, then cd to the HSO apps directory and run <strong>hsoffloader</strong></li>
+<li><strong>From Windows Explorer</strong> by double clicking on  <strong>hsoffloader</strong> icon</li>
+<li><strong>From Windows Task Scheduler</strong> </li>
+</ol>
+<h2 id="user-hsonloader"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9-.1-2.7-.2-5.4-.2-8.1 0-88.4 71.6-160 160-160 59.3 0 111 32.2 138.7 80.2A95.51 95.51 0 0 1 448 96c53 0 96 43 96 96 0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"/></svg></span> HSOnloader</h2>
+<p>To use HSOnloader, you need a source and a Smartsheet API key.  You also need to tell HSOnloader where the onloaded data should land.  All of this is specified in the relevant <a href="#user-config-files"><strong>config file</strong></a>.</p>
+<p>You may choose how to run this</p>
+<ol>
+<li><strong>Once off</strong> Ideal for a right now snapshot or dealing with a point-in-time workspace copy.</li>
+<li><strong>Regular Intervals</strong> Not advisable unless your requirements dicate this</li>
+</ol>
+<p>It can be invoked in any of the following ways</p>
+<ol>
+<li><strong>From the HSO GUI</strong> by clicking on the <strong>Run now</strong> button</li>
+<li><strong>From Windows CLI</strong> by opening a Windows Terminal or CLI, then cd to the HSO apps directory and run <strong>hsonloader</strong></li>
+<li><strong>From Windows Explorer</strong> by double clicking on  <strong>hsonloader</strong> icon</li>
+<li><strong>From Windows Task Scheduler</strong> </li>
+</ol></section><section class="print-page" id="reference"><h1 id="reference-reference-guide">Reference Guide</h1>
+<p>This section is intended as a general reference and specification set. If you are new to HSO, you will need to use the full documentation.</p>
+<h2 id="reference-specifications">Specifications</h2>
+<h3 id="reference-folder-and-subfolder-arrangement">Folder and subfolder arrangement</h3>
+<p>The following illustrates the required folder arrangement on the file system where data was offloaded to or onloaded from.</p>
+<div class="admonition note">
+<p>The folder arrangement is automatically created everytime you use <a href="#user-hsoffloader">HSOffloader</a><br>
+<a href="#user-hsonloader">HSOffloader</a> expects this arrangement and therefore if you want to load foreign data(data that was not offloaded by <strong>HSOffloader</strong>) you must manually create set subfolder structure.</p>
+</div>
+<div class="highlight"><pre><span></span><code>C:.
+<span class="hll">├───johnie.davids@gumpy.com
+</span><span class="hll">│   └───2024_07_04
+</span><span class="hll">│       └───14_27
+</span>│           ├───4420884027991940
+│           ├───5546783934834564
+│           └───7235633795098500
+<span class="hll">├───sarah.johnson@gumpy.com
+</span><span class="hll">│   └───2024_06_28
+</span><span class="hll">│       ├───10_11
+</span>│       │   ├───3913771870644100
+│       │   └───7658760014456708
+│       ├───10_15
+│       │   ├───2902336734553988
+│       │   ├───3005471784232836
+│       │   ├───3222754179737476
+│       │   ├───3458625596352388
+│       │   ├───3814151177955204
+│       │   ├───3913771870644100
+│       │   ├───7658760014456708
+│       │   └───7842162231535492
+│       ├───16_25
+│       │   ├───3814151177955204
+│       │   └───3913771870644100
+│       └───17_00
+│           └───BluePrint
+<span class="hll">└───lex.luthor@gumpy.com
+</span><span class="hll">    └───2024_07_08
+</span><span class="hll">        └───13_40
+</span>            └───2227469597075332
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Arrangement</p>
+<p>Subfolders from root
+Username -&gt; YY_MM_DD -&gt; HH_MM -&gt; WorkspaceID -&gt; offloaded sheets or attachments for the workspace</p>
+</div>
+<p>All data is offloaded to the root directory pointed to by the to_path in the configuration file
+Each Offload run will create a folder hierarchy hanging of this root.  Starts with the User, then a subfolder for current-date(YYYY_MM_DD) then the time(Offload-HH_MM) and finally the id of the workspace.  This will contain the offloaded data.</p>
+<h3 id="reference-workspace-structure">Workspace structure</h3>
+<p>All data for a Workspace is in a single flat folder with generated control files preceded by !~!.
+Each Smartsheet <strong>Sheet</strong> is labeled with its original sheetid as an Excel file.</p>
+<div class="highlight"><pre><span></span><code><span class="hll">    !~!sheets.csv
+</span><span class="hll">    !~!workspace.txt
+</span>    166872315389828.xlsx
+    4274848076720004.xlsx
+    4630737992345476.xlsx
+    5789355617871748.xlsx
+    7272749227528068.xlsx
+    8655598356064132.xlsx
+</code></pre></div>
+<blockquote>
+<p>If attachments was offloaded each attachment also labeled by its original Smartsheet ID and cast as its original filetyepe, e.g. PDF, .PNG etc.</p>
+</blockquote>
+<h2 id="reference-onload-scenarios">Onload scenarios</h2>
+<blockquote>
+<p>Data used by HSOnloader is expected to be in a certain <a href="#reference-folder-and-subfolder-arrangement">arrangement</a>, automatically created by HSOffloader.  Therefore if the data was not created by HSOffloader, ceartain steps must be followed. </p>
+</blockquote>
+<details class="note">
+<summary>Note</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="reference-__tabbed_1_1" name="reference-__tabbed_1" type="radio" /><input id="reference-__tabbed_1_2" name="reference-__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="reference-__tabbed_1_1">Rules and Restrictions</label><label for="reference-__tabbed_1_2">Future Development</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Only CSV or XLSX files will be onloaded.<br>
+Folder Hierarchies will automatically be re-created within Smartsheet<br>
+!~!Sheets.csv controls which sheets will be onloaded.  </p>
+</div>
+<div class="tabbed-block">
+<p>Currently onloading attachments under development.</p>
+</div>
+</div>
+</div>
+</details>
+<h3 id="reference-hsoffloader-created-data">HSOffloader created data</h3>
+<ol>
+<li><strong>HSO Offloaded data</strong> – Onload data previously offloaded from Smartsheet by <a href="#user-hsoffloader">HSOffloader</a></li>
+<li>
+<p><strong>HSO Offloaded data filtered</strong> – Onload selective data previously offloaded from Smartsheet by <a href="#user-hsoffloader">HSOffloader</a></p>
+<ul>
+<li>Selected Sheets</li>
+<li>Selected Folders</li>
+</ul>
+</li>
+</ol>
+<h3 id="reference-not-hsoffloader-created-data">Not HSOffloader created data</h3>
+<ol>
+<li><strong>SmartBackup Exported Sheets</strong> – Onload sheets previously exported by SmartBackup</li>
+<li><strong>Bulk extracted data</strong> – Data in XLSX or CSV formats, typically used in Data Take-on scenarios</li>
+</ol></section><h1 class='nav-section-title-end'>Ended: Guides</h1><section class="print-page" id="about"><h1 id="about-about">About</h1>
+<p>Acuworkflow gives you a simple, no-code data movement platform to copy workspaces from and to Smartsheet without the inherent 100-sheet limitation. Whether you want to migrate, protect or replicate your data, we have just the tool, it is called HSO</p>
+<p>AcuWorkflow a leading provider of securing Smartsheet data is pleased to announce its latest offering called HSO.  It is a new bulk Data Movement platform to support migrations across the various Smartsheet regions. 
+HSO is ideal for moving bulk data in or out of Smartsheet overcoming the 100-item limitation.  What sets it apart is the ability to operate at Account, User, or Workspace level whilst maintaining Smartsheet folder hierarchies on subsequent uploads.  These capabilities further expand SmartBackup tools designed to help businesses secure, protect, and govern Smartsheet data.<br />
+HSO used in conjunction with SmartBackup increases accuracy, mitigates risks, and helps with compliance requirements.  In stand-alone mode, it excels as a bulk data migrator, take-on engine, or solution duplicator.</p>
+<h2 id="about-copyright">Copyright</h2>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p></section></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.expand", "navigation.path", "navigation.footer", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
